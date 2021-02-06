@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background: hsl(210, 46%, 95%);
+    font-family: 'Manrope', sans-serif;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    min-height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.attribution a {
+    color: hsl(229, 49%, 11%);
+}
+
+.card-share-button {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: hsl(210, 46%, 95%);
+    position: relative;
+    cursor: pointer;
+    transition: all .30s ease-in-out;
+}
+
+.card-share-button .card-share-icon {
+    height: 13px;
+    width: 15px;
+    margin: auto auto;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    user-select: none;
+    fill: hsl(217, 19%, 35%);
+}
+
+.share-button-active {
+    width: 32px;
+    position: absolute;
+    top: 190px;
+    left: 372px;
+    display: flex;
+    height: 32px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.share-button-links {
+    background: hsl(217, 19%, 35%);
+    width: 250px;
+    height: 55px;
+    border-radius: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.share-button-triangle {
+    width: 0px;
+    height: 0px;
+    border-top: 14px solid hsl(217, 19%, 35%);
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+}
+
+.card {
+    font-family: 'Manrope', sans-serif;
+    width: 728px;
+    height: 280px;
+    display: grid;
+    grid-template-columns: 39% 1fr;
+    box-shadow: 4px 21px 33px -8px rgba(0, 0, 0, 0.11);
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+}
+
+.drawer {
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.drawer-img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-image: url('images/drawers.jpg');
+}
+
+.right {
+    font-family: 'Manrope', sans-serif;
+    padding: 35px 40px;
+    background-color: #ffffff;
+    color: hsl(214, 17%, 51%);
+    border-radius: 0 15px 15px 0;
+    position: relative;
+    /* padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: initial;
+    flex: 4; */
+}
+
+.user {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 0px;
+}
+
+.para {
+    padding: 10px 0px;
+    font-weight: 500;
+}
+
+.avatar {
+    margin-right: 10px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.share {
+    margin: 0px 10px;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    background-color: hsl(214, 17%, 51%);
+    color: white;
+}
+
+.user-details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.name {
+    font-weight: bold;
+    padding-bottom: 3px;
+}
