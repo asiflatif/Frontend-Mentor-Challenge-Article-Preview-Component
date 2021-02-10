@@ -51,12 +51,11 @@ html {
 }
 
 .share-button-active {
-    width: 32px;
     position: absolute;
     top: 117px;
-    left: 372px;
+    left: 262px;
     display: flex;
-    height: 32px;
+    height: 34px;
     flex-direction: column;
     align-items: center;
 }
@@ -96,6 +95,16 @@ html {
     transform: translate(-50%, -80%);
 }
 
+@media screen and (max-width: 920px) {
+    .card {
+        width: 320px;
+        height: 400px;
+        display: grid;
+        grid-template-columns: unset;
+        grid-template-rows: 203px 1fr;
+    }
+}
+
 .drawer {
     overflow: hidden;
     position: relative;
@@ -117,6 +126,12 @@ html {
     background-image: url('images/drawers.jpg');
 }
 
+@media screen and (max-width: 920px) {
+    .drawer {
+        border-radius: 10px 10px 0px 0px;
+    }
+}
+
 .right {
     font-family: 'Manrope', sans-serif;
     padding: 10px 40px;
@@ -132,11 +147,17 @@ html {
     flex: 4; */
 }
 
+@media screen and (max-width:920px) {
+    .right {
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+
 .user {
     padding: 10px 0px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
 }
 
 .heading {
@@ -187,4 +208,28 @@ html {
 
 .card-share-icon {
     pointer-events: none;
+}
+
+@media screen and (max-width:920px) {
+    .share-button-active {
+        left: 0%;
+        top: 241px;
+        width: 100%;
+    }
+    .share-button-triangle {
+        display: none;
+    }
+    .share-button-links {
+        border-radius: 0px 0px 10px 10px;
+        height: 60px;
+        width: 320px;
+        align-items: center;
+        justify-content: end;
+    }
+    .card-share-button {
+        z-index: 2;
+    }
+    .share-item {
+        padding-left: 20px;
+    }
 }
