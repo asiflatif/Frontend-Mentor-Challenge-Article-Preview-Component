@@ -24,6 +24,11 @@ html {
     color: hsl(229, 49%, 11%);
 }
 
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
 .card-share-button {
     height: 32px;
     width: 32px;
@@ -48,7 +53,7 @@ html {
 .share-button-active {
     width: 32px;
     position: absolute;
-    top: 190px;
+    top: 117px;
     left: 372px;
     display: flex;
     height: 32px;
@@ -80,7 +85,6 @@ html {
 .card {
     font-family: 'Manrope', sans-serif;
     width: 728px;
-    height: 280px;
     display: grid;
     grid-template-columns: 39% 1fr;
     box-shadow: 4px 21px 33px -8px rgba(0, 0, 0, 0.11);
@@ -88,6 +92,7 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
+    border-radius: 15px;
     transform: translate(-50%, -80%);
 }
 
@@ -114,7 +119,7 @@ html {
 
 .right {
     font-family: 'Manrope', sans-serif;
-    padding: 35px 40px;
+    padding: 10px 40px;
     background-color: #ffffff;
     color: hsl(214, 17%, 51%);
     border-radius: 0 15px 15px 0;
@@ -135,12 +140,14 @@ html {
 }
 
 .heading {
-    font-size: 20px;
-    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+    font-size: 17px;
+    font-weight: bold;
     padding: 10px 0px;
 }
 
 .para {
+    font-size: 13px;
     padding: 10px 0px;
     font-weight: 500;
 }
@@ -161,6 +168,8 @@ html {
 }
 
 .user-details {
+    color: hsl(217, 19%, 35%);
+    font-size: 13px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -170,4 +179,12 @@ html {
 .name {
     font-weight: bold;
     padding-bottom: 3px;
+}
+
+#card-share-path {
+    pointer-events: none;
+}
+
+.card-share-icon {
+    pointer-events: none;
 }
